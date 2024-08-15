@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS INDEX*/
+
+/*Menù lateral*/
+#btn-menu{
+	display: none;
+}
+.container-menu{
+	position: absolute;
+	background: rgba(0,0,0);
+	width: 100%;
+	height: 100vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;	
+	z-index: 2;
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #1c1c1c;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: #c7c7c7;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
+}
+.cont-menu nav a:hover{
+	border-left: 5px solid #c7c7c7;
+	background: #1f1f1f;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+
+.logo-menu img{
+	display: inline;
+	width: 50px;
+	height: 50px;
+}
+.logo-cross img{
+	display: inline;
+	width: 30px;
+	height: 30px;
+}
+
+.h1-index{
+	font-family: 'Noto Sans JP';
+	font-weight: 900;
+	font-size: 250px;
+}
+
+.body-index{
+	background-image: url(../img/duki-index.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+footer{
+	position: absolute;
+	z-index: 1;
+}
+footer ul li img{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+
+/* FIN CSS INDEX */
+
+/* CSS BIO */
+
+.body-bio{
+	background-color: #646672;
+}
+
+.section-text-bio{
+	width: 700px;
+	height: 875px;
+}
+
+.h1-bio{
+	display: block;
+	font-family: 'Noto Sans JP';
+	font-weight: 600;
+	font-size: 50px;
+	text-align: center;
+	margin: 30px;
+}
+
+.text-bio{
+	width: 650px;
+	height: 700px;
+	overflow: auto;
+}
+
+.text-bio p {
+	font-family: 'Noto Sans JP';
+	font-weight: 200;
+	padding: 5px;
+	text-align: justify;
+}
+.section-img-bio img{
+	width: 650px;
+	height: 700px;
+}
+
+/* CCS GALERIA */
+
+.main-galeria section h1, .main-galeria section h2{
+	font-family: 'Noto Sans JP';
+	font-weight: 600;
+	font-size: 50px;
+	margin: 30px;
+}
+
+.fotos img{
+	display: inline;
+	width: 400px;
+	height: 300px;
+}
+
+/* CSS TOUR*/
+
+.body-tour{
+	background-image: url(../img/WhatsApp\ Image\ 2024-07-27\ at\ 21.27.11.jpeg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.body-tour main section h1{
+	font-family: 'Noto Sans JP';
+	font-weight: 600;
+	font-size: 75px;
+	text-align: center;
+	color: white;
+	margin: 10px;
+}
+
+.body-tour main section table{
+	font-family: 'Noto Sans JP';
+	font-weight: 400;
+	font-size: 30px;
+	color: black;
+}
+
+.comprar{
+	text-decoration: none;
+}
+
+/* CSS DISCOGRAFICA */
+
+.body-discografica main section div h1{
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
+	font-size: 50px;
+}
+
+.body-discografica main section div p{
+	font-family: 'Noto Sans JP';
+	font-weight: 300;
+	font-size: 25px;
+}
+
+/* CSS TIENDA */
+
+.tienda{
+	font-family: 'Noto Sans JP';
+	font-weight: 800;
+	font-size: 150px;
+	text-align: center;
+	background-image: url(../img/ameri.jpeg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+.tarjeta-producto{
+	width: 410px;
+	height: 460px;
+	border: 2px solid gray;
+	margin: 20px;
+	text-align: center;
+}
+
+.tarjeta-producto img{
+	width: 100%;
+	height: 350px;
+}
+.tarjeta-producto h2{
+	margin-bottom: 5px;
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
+}
+.tarjeta-producto a{
+	background-color: #1c1c1c;
+	text-decoration: none;
+	color: white;
+	padding: 2px;
+	font-family: 'Note Sans JP';
+	font-weight: 200;
+}
+
+/* CSS CONTACTO */
+
+.body-contacto main section div h1{
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
+	font-size: 50px;
+}
+
+.body-contacto main section div p{
+	font-family: 'Noto Sans JP';
+	font-size: 25px;
+	width: 500px;
+}
+
+form{
+	width: 500px;
+}
+
+.form-group{
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
+	font-size: 20px;
+}
+
