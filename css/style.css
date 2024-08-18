@@ -8,80 +8,34 @@
 
 /*CSS INDEX*/
 
-/*Menù lateral*/
-#btn-menu{
-	display: none;
-}
-.container-menu{
-	position: absolute;
-	background: rgba(0,0,0);
-	width: 100%;
-	height: 100vh;
-	top: 0;left: 0;
-	transition: all 500ms ease;
-	opacity: 0;
-	visibility: hidden;	
-	z-index: 2;
-}
-#btn-menu:checked ~ .container-menu{
-	opacity: 1;
-	visibility: visible;
-}
-.cont-menu{
-	width: 100%;
-	max-width: 250px;
-	background: #1c1c1c;
-	height: 100vh;
-	position: relative;
-	transition: all 500ms ease;
-	transform: translateX(-100%);
-}
-#btn-menu:checked ~ .container-menu .cont-menu{
-	transform: translateX(0%);
-}
-.cont-menu nav{
-	transform: translateY(15%);
-}
-.cont-menu nav a{
-	display: block;
-	text-decoration: none;
-	padding: 20px;
-	color: #c7c7c7;
-	border-left: 5px solid transparent;
-	transition: all 400ms ease;
-	font-family: 'Noto Sans JP';
-	font-weight: 500;
-}
-.cont-menu nav a:hover{
-	border-left: 5px solid #c7c7c7;
-	background: #1f1f1f;
-}
-.cont-menu label{
-	position: absolute;
-	right: 5px;
-	top: 10px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 18px;
-}
-/*Fin de Menù lateral*/
-
-
-.logo-menu img{
-	display: inline;
+header button img{
 	width: 50px;
 	height: 50px;
 }
-.logo-cross img{
-	display: inline;
-	width: 30px;
-	height: 30px;
+
+.menu-boton{
+	border: none !important;
+}
+
+.btn-close{
+	--bs-btn-close-focus-shadow: none !important;
+}
+
+.menu-color{
+	background-color: black;
+}
+
+.nav-color{
+	color: #C9D1DD;
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
 }
 
 .h1-index{
 	font-family: 'Noto Sans JP';
 	font-weight: 900;
 	font-size: 250px;
+	color: black;
 }
 
 .body-index{
@@ -99,6 +53,16 @@ footer ul li img{
 	width: 30px;
 	height: 30px;
 	margin: 5px;
+}
+
+li{
+	list-style-type: none;
+}
+li a{
+	text-decoration: none;
+	color: #C9D1DD;
+	font-family: 'Noto Sans JP';
+	font-weight: 500;
 }
 
 /* FIN CSS INDEX */
@@ -170,19 +134,25 @@ footer ul li img{
 	font-weight: 600;
 	font-size: 75px;
 	text-align: center;
-	color: white;
+	color: #E30413;
 	margin: 10px;
 }
 
-.body-tour main section table{
-	font-family: 'Noto Sans JP';
-	font-weight: 400;
-	font-size: 30px;
-	color: black;
-}
-
-.comprar{
-	text-decoration: none;
+.btn-primary {
+    
+    --bs-btn-bg: #E30413 !important;
+    --bs-btn-border-color: #E30413 !important;
+    
+    --bs-btn-hover-bg: #E30413 !important;
+    --bs-btn-hover-border-color: #E30413 !important;
+    
+    
+    --bs-btn-active-bg: #E30413 !important;
+    --bs-btn-active-border-color: #E30413 !important;
+    
+    
+    --bs-btn-disabled-bg: #E30413 !important;
+    --bs-btn-disabled-border-color: #E30413 !important;
 }
 
 /* CSS DISCOGRAFICA */
