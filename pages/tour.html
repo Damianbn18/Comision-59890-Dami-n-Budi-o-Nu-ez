@@ -14,7 +14,7 @@
     <header class="header">
         <button class="btn btn-outline menu-boton" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
-                src="..//img/menu-burger.png" alt="">
+                src="..//img/menu.png" alt="">
         </button>
 
         <div class="offcanvas offcanvas-start menu-color" data-bs-scroll="true" tabindex="-1"
@@ -38,38 +38,56 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
-            <h1>A.D.A TOUR 2024</h1>
-        </section>
-        <section>
-            <!--TABLA-->
-            <div>
-                <div>
-                    <p>7-8</p>
-                    <p>DIC</p>
-                </div>
-                <p>BS AS TRAP PARQUE DE LA CIUDAD</p>
-                <a class="btn btn-primary" href="https://www.ticketek.com.ar/buenos-aires-trap/parque-de-la-ciudad"
-                    role="button" target="_blank">Comprar!</a>
+    <main class="main-tour">
+        <h1>A.D.A TOUR 2024</h1>
+        <section class="section-tour1">
+            <!--EVENTO 1-->
+            <div class="evento-1-fecha">
+                <p>7-8 <br>DIC</p>
             </div>
-            <div>
-                <div>
-                    <p>15</p>
-                    <p>NOV</p>
-                </div>
-                <p>CHILE ESTADIO MONUMENTAL</p>
-                <a class="btn btn-primary" href="https://www.puntoticket.com/DUKI" role="button"
-                    target="_blank">Comprar!</a>
+            <p class="evento-1-lugar">BS AS TRAP PARQUE DE LA CIUDAD</p>
+            <a class="btn btn-primary boton-1" href="https://www.ticketek.com.ar/buenos-aires-trap/parque-de-la-ciudad"
+                role="button" target="_blank">Comprar!</a>
+            <!--EVENTO 2-->
+            <div class="evento-2-fecha">
+                <p>15 <br>NOV</p>
             </div>
-            <div>
-                <div>
-                    <p>23</p>
-                    <p>JUN</p>
+            <p class="evento-2-lugar">CHILE ESTADIO MONUMENTAL</p>
+            <a class="btn btn-primary boton-2" href="https://www.puntoticket.com/DUKI" role="button"
+                target="_blank">Comprar!</a>
+            <!--EVENTO 3-->
+            <div class="evento-3-fecha">
+                <p>23 <br>JUN</p>
+            </div>
+            <p class="evento-3-lugar">LONDRES SCALA</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary boton-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar!
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Este evento se encuentra agotado o ya fue trascurrido.
+                        </div>
+                    </div>
                 </div>
-                <p>LONDRES SCALA</p>
+            </div>
+            <!--EVENTO 4-->
+                <div class="evento-4-fecha">
+                    <p>22 <br>JUN</p>
+                </div>
+                <p class="evento-4-lugar">BERLIN HUXLEYS NEUE WELT</p>
+
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-4" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -83,21 +101,48 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--EVENTO 5-->
+                <div class="evento-5-fecha">
+                    <p>20 <br>JUN</p>
+                </div>
+                <p class="evento-5-lugar">PARIS BATACLAN</p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary boton-5" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Comprar!
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>22</p>
-                    <p>JUN</p>
+            <!--EVENTO 6-->
+                <div class="evento-6-fecha">
+                    <p>19 <br>JUN</p>
                 </div>
-                <p>BERLIN HUXLEYS NEUE WELT</p>
+                <p class="evento-6-lugar">MILAN FABRIQUE</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-6" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -111,21 +156,20 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>20</p>
-                    <p>JUN</p>
+            <!--EVENTO 7-->
+                <div class="evento-7-fecha">
+                    <p>08 <br>JUN</p>
                 </div>
-                <p>PARIS BATACLAN</p>
+                <p class="evento-7-lugar"> MADRID ESTADIO SANTIAGO BERNABÉU</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-7" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -139,21 +183,20 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>19</p>
-                    <p>JUN</p>
+            <!--EVENTO 8-->
+                <div class="evento-8-fecha">
+                    <p>05 <br>MAY</p>
                 </div>
-                <p>MILAN FABRIQUE</p>
+                <p class="evento-8-lugar">MEDELLIN LA MACARENA</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-8" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -167,21 +210,20 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>08</p>
-                    <p>JUN</p>
+            <!--EVENTO 9-->
+                <div class="evento-9-fecha">
+                    <p>04 <br>MAY</p>
                 </div>
-                <p> MADRID ESTADIO SANTIAGO BERNABÉU</p>
+                <p class="evento-9-lugar">BOGOTA MOVISTAR ARENA</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-9" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -195,79 +237,22 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>05</p>
-                    <p>MAY</p>
-                </div>
-                <p>MEDELLIN LA MACARENA</p>
-
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Comprar!
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                AGOTADO
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>04</p>
-                    <p>MAY</p>
-                </div>
-                <p>BOGOTA MOVISTAR ARENA</p>
-
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Comprar!
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <div>
-                    <p>02</p>
-                    <p>MAY</p>
+        <section class="section-tour2">
+            <!--EVENTO 10-->
+                <div class="evento-1-fecha">
+                    <p>02 <br>MAY</p>
                 </div>
-                <p>LIMA COSTA 21</p>
+                <p class="evento-1-lugar">LIMA COSTA 21</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -281,21 +266,20 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>13</p>
-                    <p>ABR</p>
+            <!--EVENTO 11-->
+                <div class="evento-2-fecha">
+                    <p>13 <br>ABR</p>
                 </div>
-                <p>CDMX PALACIO DE LOS DEPORTES</p>
+                <p class="evento-2-lugar">CDMX PALACIO DE LOS DEPORTES</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -309,21 +293,20 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>12</p>
-                    <p>ABR</p>
+            <!--EVENTO 12-->
+                <div class="evento-3-fecha">
+                    <p>12 <br>ABR</p>
                 </div>
-                <p>MONTERREY AUDITORIO CITI BANMEX</p>
+                <p class="evento-3-lugar">MONTERREY AUDITORIO CITI BANMEX</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -337,21 +320,19 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>10</p>
-                    <p>ABR</p>
+            <!--EVENTO-->
+                <div class="evento-4-fecha">
+                    <p>10 <br>ABR</p>
                 </div>
-                <p>GUADALAJARA ARENA VFG</p>
+                <p class="evento-4-lugar">GUADALAJARA ARENA VFG</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -365,21 +346,20 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>11</p>
-                    <p>FEB</p>
+            <!--EVENTO-->
+            
+                <div class="evento-5-fecha">
+                    <p>11 <br>FEB</p>
                 </div>
-                <p>COSQUIN COSQUIN ROCK</p>
+                <p class="evento-5-lugar">COSQUIN COSQUIN ROCK</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -393,21 +373,19 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>09</p>
-                    <p>FEB</p>
+            <!--EVENTO-->
+                <div class="evento-6-fecha">
+                    <p>09 <br>FEB</p>
                 </div>
-                <p>VILLA MARIA FESTIVAL DE PEÑAS</p>
+                <p class="evento-6-lugar">VILLA MARIA FESTIVAL DE PEÑAS</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -421,21 +399,19 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>03</p>
-                    <p>DIC</p>
+            <!--EVENTO-->
+                <div class="evento-7-fecha">
+                    <p>03 <br>DIC</p>
                 </div>
-                <p>BUENOS AIRES ESTADIO RIVER PLATE</p>
+                <p class="evento-7-lugar">BUENOS AIRES ESTADIO RIVER PLATE</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-7" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -449,21 +425,19 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <p>02</p>
-                    <p>DIC</p>
+            <!--EVENTO-->
+                <div class="evento-8-fecha">
+                    <p>02 <br>DIC</p>
                 </div>
-                <p>BUENOS AIRES ESTADIO RIVER PLATE</p>
+                <p class="evento-8-lugar">BUENOS AIRES ESTADIO RIVER PLATE</p>
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary boton-8" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Comprar!
                 </button>
 
@@ -477,28 +451,28 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                AGOTADO
+                                Este evento se encuentra agotado o ya fue trascurrido.
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </section>
     </main>
     <footer>
         <!--REDES-->
         <ul>
             <li><a href="https://x.com/DukiSSJ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    target="_blank"><img src="../img/twitter-alt-square.png" alt=""></a></li>
-            <li><a href="https://www.tiktok.com/@duki?lang=es" target="_blank"><img src="../img/tik-tok.png" alt=""></a>
+                    target="_blank"><img src="../img/twitter-alt-square-rojo.png" alt=""></a></li>
+            <li><a href="https://www.tiktok.com/@duki?lang=es" target="_blank"><img src="../img/tik-tok-rojo.png" alt=""></a>
             </li>
             <li><a href="https://open.spotify.com/intl-es/artist/1bAftSH8umNcGZ0uyV7LMg" target="_blank"><img
-                        src="../img/spotify.png" alt=""></a></li>
-            <li><a href="https://www.facebook.com/DUKISSJ/" target="_blank"><img src="../img/facebook.png" alt=""></a>
+                        src="../img/spotify-rojo.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/DUKISSJ/" target="_blank"><img src="../img/facebook-rojo.png" alt=""></a>
             </li>
             <li><a href="https://www.youtube.com/channel/UCJUYcEdvnYFGajHBW0Nao3w" target="_blank"><img
-                        src="../img/youtube.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/duki/" target="_blank"><img src="../img/instagram.png" alt=""></a>
+                        src="../img/youtube-rojo.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/duki/" target="_blank"><img src="../img/instagram-rojo.png" alt=""></a>
             </li>
         </ul>
     </footer>
